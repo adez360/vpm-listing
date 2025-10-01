@@ -1,0 +1,40 @@
+name: Check Language Files
+
+on:
+  push:
+    paths:
+      - 'README*.md'
+      - 'scripts/update-languages.js'
+  pull_request:
+    paths:
+      - 'README*.md'
+      - 'scripts/update-languages.js'
+
+jobs:
+  check-languages:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Check language files
+      run: |
+        node scripts/update-languages.js check
+        
+    - name: Validate language files
+      run: |
+        node scripts/update-languages.js validate
+        
+    - name: Check language selectors
+      run: |
+        node scripts/sync-language-selector.js check
+        
+    - name: List available languages
+      run: |
+        node scripts/update-languages.js list
