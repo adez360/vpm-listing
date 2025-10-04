@@ -1,7 +1,7 @@
 {
-    "name": "adez360 Package Listing",
-    "id": "com.adez360.packages",
-    "url": "https://adez360.github.io/adez360-packages/index.json",
+    "name": "adez360",
+    "id": "com.adez360.vpm",
+    "url": "https://vpm.adez360.com/index.json",
     "author": {
         "email": "admin@adez360.com",
         "name": "adez360",
@@ -9,7 +9,7 @@
     },
     "description": "A VRChat package listing provided by adez360, including commonly used and custom tools.",
     "infoLink": {
-        "url": "https://github.com/adez360/adez360-packages",
+        "url": "https://github.com/adez360/vpm-listing",
         "text": "View on GitHub"
     },
     "bannerUrl": "banner.png",
