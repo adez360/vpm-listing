@@ -2,7 +2,7 @@
 
 > 🌐 **Language / 語言 / 语言 / 言語**: [English](README.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
-adez360 提供的 VRChat 套件存储库，包含 VRChat 创作者必备的开发工具和实用程序。
+adez360 提供的 VRChat 套件存储库。
 
 ## 🚀 安装方式
 
