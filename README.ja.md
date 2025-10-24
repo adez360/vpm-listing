@@ -1,88 +1,51 @@
-# adez360 VPM Package Listing
+# adez360 VPM パッケージリスト
 
 > 🌐 **Language / 語言 / 语言 / 言語**: [English](README.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
-adez360 が提供する VRChat パッケージリスト。よく使用されるツールとカスタムツールを含みます。
-
-このリポジトリには、adez360 が開発・保守する VRChat パッケージが含まれており、VPM (VRChat Package Manager) を通じて簡単にインストール・更新できます。
-
-## 📦 含まれるパッケージ
-
-現在以下のパッケージが含まれています：
-
-- **EditorScreenShot** - エディタースクリーンショットツール
+adez360 が提供する VRChat パッケージリポジトリ。
 
 ## 🚀 インストール方法
 
-### 方法1: VPM 経由でインストール
+### VPM 経由のクイックセットアップ
 
-1. Unity で VRChat SDK を開く
-2. VPM ウィンドウを開く
-3. "Add Repository" をクリック
-4. 以下の URL を入力：`https://adez360.github.io/adez360-packages/index.json`
-5. "Add" をクリックして追加完了
+**ワンクリックでリポジトリを追加：**
+[![リポジトリを追加](https://img.shields.io/badge/%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%97%E3%81%A6VCC%E3%81%AB%E8%BF%BD%E5%8A%A0-green)](vcc://vpm/addRepo?url=https://vpm.adez360.com/index.json)
 
-### 方法2: 手動インストール
+**手動セットアップ：**
+1. **Unity を開く** VRChat SDK がインストールされていることを確認
+2. **VPM ウィンドウを開く** (Window → VRChat SDK → VPM)
+3. **リポジトリを追加**：
+   - "Add Repository" をクリック
+   - URL を入力：`https://vpm.adez360.com/index.json`
+   - "Add" をクリック
+4. **パッケージをインストール**：
+   - 利用可能なパッケージを閲覧
+   - 必要なパッケージの "Install" をクリック
+   - パッケージが自動的にプロジェクトに追加されます
 
-1. 必要なパッケージをダウンロード
-2. Unity でパッケージファイルをインポート
-3. 各パッケージの説明書に従って設定
+### 手動インストール
 
-## 📋 パッケージリスト
+1. 個別リポジトリからパッケージファイルをダウンロード
+2. Unity で `.unitypackage` ファイルをインポート
+3. パッケージ専用のドキュメントに従って設定
 
-| パッケージ名 | 説明 | バージョン | ステータス |
-|-------------|------|-----------|-----------|
-| EditorScreenShot | エディタースクリーンショットツール | 最新 | ✅ 利用可能 |
+## 📦 利用可能なパッケージ
 
-## 🔧 開発者情報
+| パッケージ名 | 説明 | GitHub リポジトリ | バージョン |
+|-------------|------|-------------------|-----------|
+| **EditorScreenShot** | Unity エディター用高度なスクリーンショットツール | [adez360/EditorScreenShot](https://github.com/adez360/EditorScreenShot) | 最新 |
+| **AutoSaver** | カスタマイズ可能な間隔での自動プロジェクト保存ツール | [adez360/AutoSaver](https://github.com/adez360/AutoSaver) | 最新 |
 
-- **作者**: adez360
-- **連絡先**: admin@adez360.com
-- **GitHub**: [@adez360](https://github.com/adez360)
-- **プロジェクトページ**: [adez360-packages](https://github.com/adez360/adez360-packages)
+## 👨‍💻 開発者情報
 
-## 🔄 自動更新
-
-このパッケージリストは GitHub Actions を通じて自動的にビルド・公開されます。新しいパッケージバージョンがリリースされると、VPM が自動的に検出して更新を通知します。
-
-- **自動ビルド**: main ブランチへのプッシュ時に自動的にパッケージリストを再ビルド
-- **GitHub Pages**: パッケージリストは https://adez360.github.io/adez360-packages/ に公開
-- **リアルタイム更新**: VPM が定期的にチェックして最新のパッケージバージョンをダウンロード
-
-## 🛠️ 技術詳細
-
-### パッケージリスト形式
-このリポジトリは [`source.json`](source.json) で定義された標準の VPM Repo Listing 形式を使用：
-
-- **name**: パッケージリスト名
-- **id**: 一意識別子 (com.adez360.packages)
-- **url**: パッケージリストの JSON ファイル位置
-- **author**: 作者情報
-- **githubRepos**: GitHub でホストされているパッケージリスト
-
-### ビルドプロセス
-[build-listing.yml](.github/workflows/build-listing.yml) ワークフローは以下を実行：
-
-1. 指定されたすべての GitHub リポジトリをチェック
-2. 最新のリリースバージョン情報を収集
-3. VPM 形式に準拠したパッケージリスト JSON を生成
-4. GitHub Pages 上のパッケージリストを更新
-
-## 📞 サポートとフィードバック
-
-問題が発生した場合やご提案がある場合は：
-
-- [GitHub Issues](https://github.com/adez360/adez360-packages/issues) で問題を報告
-- email で連絡：admin@adez360.com
-- 各パッケージの個別説明書を確認
-
-## 📄 ライセンス
-
-各パッケージのライセンス条項は個別パッケージのリポジトリを参照してください。ご質問がある場合は開発者にお問い合わせください。
+- **開発者**：adez360
+- **メール**：[admin@adez360.com](mailto:admin@adez360.com)
+- **GitHub**：[@adez360](https://github.com/adez360)
+- **公式サイト**：[https://adez360.com](https://adez360.com)
 
 ---
 
-## 🌐 他の言語 / Other Languages
+## 🌐 他の言語
 
 - [English](README.md)
 - [繁體中文](README.zh-TW.md)
